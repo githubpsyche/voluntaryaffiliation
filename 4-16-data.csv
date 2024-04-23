@@ -1,0 +1,143 @@
+﻿88,Asian-Pacific Islander,18,Male,Control Script,"1,18,6,4,8,13,23,7,20,22,15,24,16,5,11,27","27,15,22,4,18,11,13,20,","24,5,16,1,6,8,7,23,",2024-03-30 16:05:38.143,yes,7,no
+89,Asian-Pacific Islander,20,Male,Control Script,"16,8,2,12,7,11,1,3,24,14,5,22,18,6,13,26","14,22,5,7,13,26,18,16,","3,24,6,8,2,12,11,1,",2024-03-30 16:07:50.557,yes,7,no
+90,Asian-Pacific Islander,18,Male,Control Script,"17,13,5,6,2,27,16,4,3,20,1,18,26,25,24,11","13,5,25,3,18,20,2,26,","24,11,1,4,16,27,6,17,",2024-03-30 16:32:08.933,no,10,no
+91,White,21,Male,Control Script,"17,22,5,25,27,23,14,12,21,20,18,15,3,24,2,6","6,25,15,22,24,12,14,2,","3,20,18,17,5,27,23,21,",2024-03-30 19:34:31.007,yes,8,no
+92,Asian-Pacific Islander,19,Male,NULL,NULL,NULL,NULL,2024-03-30 20:07:04.340,yes,6,NULL
+93,Asian-Pacific Islander,21,Male,Experimental Script,"23,22,5,11,17,21,15,16,18,13,12,26,25,8,24,6","25,15,5,18,12,8,6,11,","24,26,13,16,21,17,22,23,",2024-03-31 17:33:24.613,yes,8,yes
+94,Asian-Pacific Islander,19,Male,Control Script,"12,21,5,26,11,27,3,20,24,6,16,14,7,1,25,2","12,21,5,26,11,27,3,20,","24,6,16,14,7,1,25,2,",2024-03-31 17:52:00.473,yes,8,no
+95,Asian-Pacific Islander,1,Male,NULL,NULL,NULL,NULL,2024-03-31 17:59:44.093,yes,NULL,NULL
+96,Asian-Pacific Islander,1,Male,NULL,NULL,NULL,NULL,2024-03-31 17:59:44.313,yes,10,NULL
+97,Asian-Pacific Islander,19,Male,Control Script,"18,13,26,15,22,23,17,3,4,20,6,24,7,14,25,8","18,13,23,8,20,3,24,6,","14,25,7,4,22,26,17,15,",2024-03-31 22:09:05.467,yes,6,no
+98,White,20,Male,Control Script,"1,14,27,4,24,5,16,18,12,11,20,25,15,17,23,3","14,23,5,3,15,27,16,12,","1,4,18,17,25,20,11,24,",2024-04-01 16:10:27.400,yes,8,no
+99,Other,19,Male,Experimental Script,"13,3,23,2,5,11,21,1,6,27,7,22,25,24,12,14","7,27,3,22,13,1,24,5,","14,25,12,2,23,11,21,6,",2024-04-01 16:13:11.980,yes,9,no
+100,African-American,30,Male,NULL,NULL,NULL,NULL,2024-04-01 16:21:20.620,yes,9,NULL
+101,Asian-Pacific Islander,19,Male,NULL,NULL,NULL,NULL,2024-04-01 16:25:39.523,yes,NULL,NULL
+102,African-American,30,Male,NULL,NULL,NULL,NULL,2024-04-01 16:33:06.840,yes,9,NULL
+103,Asian-Pacific Islander,43,Female,Experimental Script,"12,24,16,14,7,5,8,25,23,22,17,4,27,6,21,18","18,12,6,7,5,8,16,23,","17,14,21,27,25,4,24,22,",2024-04-01 16:34:59.220,yes,8,no
+104,Asian-Pacific Islander,47,Female,Experimental Script,"27,13,18,12,11,4,7,24,6,8,3,26,20,17,25,1","8,3,24,1,25,27,13,6,","26,17,18,12,11,4,7,20,",2024-04-01 16:47:08.003,yes,4,no
+105,White,42,Female,NULL,NULL,NULL,NULL,2024-04-01 16:50:17.823,no,7,NULL
+106,Asian-Pacific Islander,50,Male,Experimental Script,"13,1,14,7,18,20,23,22,15,5,3,21,26,4,8,24","20,1,14,15,21,3,26,24,","13,7,18,22,4,8,5,23,",2024-04-01 16:57:18.640,yes,8,no
+107,Asian-Pacific Islander,19,Male,NULL,NULL,NULL,NULL,2024-04-01 16:58:33.450,yes,8,NULL
+108,African-American,20,Male,Control Script,"13,6,15,1,7,18,3,12,16,17,11,2,26,20,5,22","26,6,12,22,15,13,18,7,","1,17,20,5,11,2,16,3,",2024-04-01 17:01:51.647,yes,10,yes
+109,Asian-Pacific Islander,54,Male,NULL,NULL,NULL,NULL,2024-04-01 17:03:21.523,yes,9,NULL
+110,White,19,Male,Experimental Script,"24,20,27,15,23,25,16,26,4,21,7,22,18,3,8,6","6,22,18,16,20,3,4,25,","21,8,24,27,15,23,26,7,",2024-04-01 17:05:44.630,yes,9,no
+111,Asian-Pacific Islander,18,Male,NULL,NULL,NULL,NULL,2024-04-01 17:09:48.440,yes,8,NULL
+112,Asian-Pacific Islander,20,Male,Experimental Script,"7,17,11,1,8,22,21,2,27,13,24,14,20,4,18,16","4,18,24,22,1,2,16,27,","20,14,11,21,13,8,17,7,",2024-04-01 17:13:53.380,yes,8,no
+113,White,20,Male,NULL,NULL,NULL,NULL,2024-04-01 17:14:18.847,yes,8,NULL
+114,Asian-Pacific Islander,18,Male,Experimental Script,"17,18,5,27,13,11,20,16,2,6,12,24,22,1,8,7","27,6,20,18,5,22,24,16,","17,13,11,2,12,1,8,7,",2024-04-01 17:14:35.260,yes,7,no
+115,Asian-Pacific Islander,21,Female,Control Script,"2,20,7,21,5,13,26,27,25,18,4,23,12,15,6,14","7,23,15,2,6,4,20,25,","12,18,27,26,14,5,13,21,",2024-04-01 17:15:51.380,yes,7,no
+116,Other,20,Male,Control Script,"27,1,17,23,5,4,24,15,12,21,13,6,3,11,26,8","8,11,13,12,15,17,1,27,","26,3,23,5,4,24,21,6,",2024-04-01 17:16:18.180,yes,7,no
+117,African-American,23,Male,Control Script,"1,21,2,22,17,20,25,14,24,4,23,13,12,15,3,11","25,12,13,4,22,20,15,1,","11,3,23,21,14,24,17,2,",2024-04-01 17:16:19.800,yes,7,no
+118,Other,45,Female,NULL,NULL,NULL,NULL,2024-04-01 17:18:40.870,yes,9,NULL
+119,Asian-Pacific Islander,21,Male,NULL,NULL,NULL,NULL,2024-04-01 17:20:59.053,yes,10,NULL
+120,Asian-Pacific Islander,41,Male,NULL,NULL,NULL,NULL,2024-04-01 17:24:52.973,no,4,NULL
+121,White,20,Female,Experimental Script,"25,7,4,3,20,26,5,22,14,24,15,23,12,1,18,21","18,12,22,15,3,7,20,25,","26,14,21,24,23,1,5,4,",2024-04-01 17:29:34.943,yes,8,no
+122,White,20,Male,Experimental Script,"18,2,17,21,14,11,4,20,12,3,26,6,22,23,1,24","14,3,12,17,6,4,18,24,","1,23,2,21,11,20,22,26,",2024-04-01 17:31:47.507,yes,8,no
+123,Asian-Pacific Islander,18,Female,NULL,NULL,NULL,NULL,2024-04-01 17:45:26.220,yes,8,NULL
+124,Asian-Pacific Islander,18,Male,Experimental Script,"20,1,2,27,12,23,16,14,3,22,15,18,26,6,25,24","15,14,25,6,1,12,2,20,","18,24,26,27,23,16,3,22,",2024-04-01 17:54:28.800,yes,9,no
+125,Asian-Pacific Islander,42,Female,Control Script,"11,7,4,20,27,5,3,26,13,12,24,18,14,22,15,2","2,26,12,22,7,27,20,15,","11,4,5,3,14,18,24,13,",2024-04-01 17:58:59.760,yes,9,no
+126,Asian-Pacific Islander,20,Female,NULL,NULL,NULL,NULL,2024-04-01 18:09:58.993,yes,8,NULL
+127,Other,21,Male,Experimental Script,"14,26,17,3,13,24,22,2,20,12,18,15,7,8,23,6","12,6,15,3,20,26,13,14,","24,23,18,2,22,8,7,17,",2024-04-01 18:14:22.833,yes,9,no
+128,Asian-Pacific Islander,48,Female,NULL,NULL,NULL,NULL,2024-04-01 18:23:03.643,no,6,NULL
+129,Asian-Pacific Islander,40,Female,Control Script,"23,18,25,7,17,13,16,12,5,2,1,4,21,22,3,6","22,3,7,16,1,18,6,17,","21,12,2,25,23,13,4,5,",2024-04-01 18:24:10.680,yes,8,yes
+130,Latinx,22,Male,NULL,NULL,NULL,NULL,2024-04-01 18:31:08.913,yes,5,NULL
+131,Asian-Pacific Islander,22,Male,Control Script,"18,3,11,5,21,15,12,14,7,20,24,25,1,27,22,17","21,20,22,3,14,27,25,1,","17,24,18,11,5,15,12,7,",2024-04-01 18:44:05.450,yes,7,no
+132,White,19,Male,NULL,NULL,NULL,NULL,2024-04-01 18:57:42.653,yes,10,NULL
+133,African-American,21,Female,NULL,NULL,NULL,NULL,2024-04-01 19:14:01.653,yes,7,NULL
+134,Asian-Pacific Islander,19,Male,Experimental Script,"25,17,24,23,20,11,2,7,4,14,27,5,22,3,6,15","6,5,20,3,15,27,4,7,","11,14,17,24,22,2,23,25,",2024-04-01 19:24:53.750,yes,6,no
+135,African-American,21,Male,NULL,NULL,NULL,NULL,2024-04-01 19:26:53.563,yes,8,NULL
+136,Asian-Pacific Islander,21,Female,Experimental Script,"24,26,27,4,14,20,25,5,3,22,23,7,16,12,13,11","7,3,25,16,4,12,13,5,","11,23,24,27,26,20,22,14,",2024-04-01 19:27:54.037,yes,8,no
+137,Asian-Pacific Islander,1,Male,Experimental Script,"23,17,24,15,20,26,1,16,25,8,7,14,4,22,18,2","2,7,14,4,18,22,8,16,","25,1,26,20,15,24,17,23,",2024-04-01 19:34:05.183,yes,10,NULL
+138,Asian-Pacific Islander,21,Male,NULL,NULL,NULL,NULL,2024-04-01 20:00:20.300,yes,10,NULL
+139,Asian-Pacific Islander,41,Female,NULL,NULL,NULL,NULL,2024-04-01 20:47:32.513,yes,8,NULL
+140,Asian-Pacific Islander,18,Female,Experimental Script,"21,23,13,4,1,26,12,22,17,6,27,24,14,16,20,8","21,23,1,6,12,14,16,8,","4,26,22,17,27,24,13,20,",2024-04-01 22:09:37.883,yes,7,no
+141,African-American,21,Female,Control Script,"3,23,16,7,14,24,27,18,4,1,13,21,12,26,2,6","12,18,7,14,3,23,27,6,","16,2,26,21,13,24,4,1,",2024-04-01 22:20:17.817,yes,8,no
+142,Asian-Pacific Islander,19,Male,Control Script,"11,16,12,26,18,3,24,25,27,14,15,2,17,8,7,20","3,18,12,17,15,16,25,27,","20,24,2,7,8,14,26,11,",2024-04-01 22:39:38.320,yes,8,no
+143,White,19,Female,Experimental Script,"2,5,25,20,6,15,22,26,18,11,3,1,8,14,16,17","15,26,22,14,17,18,6,5,","25,3,11,2,20,1,8,16,",2024-04-01 22:55:55.327,yes,9,no
+144,Asian-Pacific Islander,1,Male,Control Script,"3,14,21,26,16,24,1,6,2,20,23,4,27,18,13,11","11,23,27,18,13,20,16,4,","2,6,1,26,24,21,14,3,",2024-04-01 23:06:53.057,yes,10,NULL
+145,White,19,Male,Control Script,"2,7,13,18,6,27,15,21,22,20,14,1,11,8,4,16","13,2,7,15,21,22,11,8,","18,6,27,20,14,1,4,16,",2024-04-01 23:29:28.023,yes,10,no
+146,Asian-Pacific Islander,46,Male,NULL,NULL,NULL,NULL,2024-04-02 00:05:01.393,yes,NULL,NULL
+147,Asian-Pacific Islander,46,Male,Control Script,"4,11,24,6,26,16,18,8,7,1,23,20,25,27,2,15","26,15,4,20,1,23,2,18,","11,25,24,6,16,8,7,27,",2024-04-02 00:05:02.290,yes,7,no
+148,Asian-Pacific Islander,44,Male,NULL,NULL,NULL,NULL,2024-04-02 00:12:50.437,yes,6,NULL
+149,Asian-Pacific Islander,44,Male,NULL,NULL,NULL,NULL,2024-04-02 00:16:36.823,yes,7,NULL
+150,Other,42,Male,Experimental Script,"11,24,17,20,21,12,1,22,27,26,13,6,3,7,2,14","7,20,26,22,1,14,12,27,","2,3,6,13,17,24,21,11,",2024-04-02 00:18:16.437,no,8,no
+151,Asian-Pacific Islander,41,Male,NULL,NULL,NULL,NULL,2024-04-02 00:19:51.480,yes,8,NULL
+152,Asian-Pacific Islander,45,Female,NULL,NULL,NULL,NULL,2024-04-02 00:22:00.420,yes,NULL,NULL
+153,Asian-Pacific Islander,42,Male,Experimental Script,"20,26,21,3,6,8,12,14,22,23,11,16,1,27,18,24","18,11,26,22,14,24,16,23,","27,6,21,12,1,8,3,20,",2024-04-02 00:22:23.410,yes,8,no
+154,Asian-Pacific Islander,39,Male,NULL,NULL,NULL,NULL,2024-04-02 00:23:09.370,yes,10,NULL
+155,Asian-Pacific Islander,45,Male,Control Script,"13,2,26,16,15,21,27,24,18,3,6,25,22,7,11,14","2,16,26,13,7,18,25,22,","14,11,15,21,27,24,3,6,",2024-04-02 00:23:30.627,yes,8,no
+156,Asian-Pacific Islander,43,Male,NULL,NULL,NULL,NULL,2024-04-02 00:33:05.773,yes,6,NULL
+157,Asian-Pacific Islander,41,Male,Experimental Script,"26,18,17,3,8,20,7,22,6,27,12,2,11,23,5,16","12,7,18,11,16,3,26,22,","6,27,2,23,5,20,8,17,",2024-04-02 00:33:19.893,yes,7,no
+158,Asian-Pacific Islander,1,Male,NULL,NULL,NULL,NULL,2024-04-02 00:34:43.560,yes,10,NULL
+159,Asian-Pacific Islander,60,Male,Experimental Script,"14,6,22,3,27,1,12,25,18,24,21,26,8,16,11,17","1,22,6,12,21,11,8,26,","3,17,24,27,14,16,25,18,",2024-04-02 00:36:28.880,no,5,no
+160,Asian-Pacific Islander,43,Male,NULL,NULL,NULL,NULL,2024-04-02 00:41:25.373,yes,7,NULL
+161,Other,50,Female,NULL,NULL,NULL,NULL,2024-04-02 00:46:11.207,yes,8,NULL
+162,Asian-Pacific Islander,36,Male,NULL,NULL,NULL,NULL,2024-04-02 00:48:34.520,yes,8,NULL
+163,Asian-Pacific Islander,40,Female,NULL,NULL,NULL,NULL,2024-04-02 00:49:03.850,no,4,NULL
+164,Asian-Pacific Islander,49,Male,NULL,NULL,NULL,NULL,2024-04-02 00:49:19.477,yes,9,NULL
+165,Asian-Pacific Islander,45,Male,Experimental Script,"1,16,25,27,4,17,13,12,11,6,15,8,21,18,3,26","3,8,13,25,27,4,15,17,","11,18,21,12,6,26,1,16,",2024-04-02 00:54:12.177,yes,9,no
+166,African-American,20,Male,Control Script,"26,25,14,22,1,5,2,12,21,27,16,13,20,11,7,24","1,5,2,22,14,26,11,25,","13,16,7,20,24,27,21,12,",2024-04-02 00:55:06.087,yes,6,yes
+167,Asian-Pacific Islander,40,Female,Experimental Script,"5,4,12,7,27,25,26,21,24,15,8,3,22,1,16,11","11,3,1,16,15,8,22,24,","4,26,21,25,27,7,12,5,",2024-04-02 00:57:35.157,no,4,no
+168,Asian-Pacific Islander,36,Male,NULL,NULL,NULL,NULL,2024-04-02 01:11:16.083,no,8,NULL
+169,Asian-Pacific Islander,38,Male,Control Script,"18,8,2,27,6,7,17,23,22,13,4,25,5,12,16,15","15,27,25,4,23,13,7,22,","5,16,12,18,8,2,6,17,",2024-04-02 01:17:30.903,yes,8,no
+170,Asian-Pacific Islander,38,Male,NULL,NULL,NULL,NULL,2024-04-02 01:31:36.507,yes,6,NULL
+171,Asian-Pacific Islander,0,Male,NULL,NULL,NULL,NULL,2024-04-02 01:36:51.600,yes,NULL,NULL
+172,Asian-Pacific Islander,49,Male,NULL,NULL,NULL,NULL,2024-04-02 01:40:34.413,no,9,NULL
+173,Asian-Pacific Islander,45,Male,Control Script,"16,7,5,21,8,26,24,3,20,15,1,13,14,12,4,6","4,1,12,13,20,7,16,26,","6,14,15,5,21,3,24,8,",2024-04-02 01:46:07.267,yes,8,no
+174,Asian-Pacific Islander,44,Female,Experimental Script,"4,17,26,22,24,11,8,1,12,20,13,2,23,16,15,27","23,4,27,13,26,12,16,15,","17,22,1,2,20,8,11,24,",2024-04-02 01:48:13.697,yes,7,no
+175,Asian-Pacific Islander,45,Female,Experimental Script,"7,12,26,18,3,17,14,4,15,6,23,20,24,25,16,2","7,3,15,20,2,17,26,12,","18,14,4,6,23,24,25,16,",2024-04-02 01:48:40.437,no,6,no
+176,Asian-Pacific Islander,36,Male,Experimental Script,"13,16,23,5,26,7,24,14,18,25,22,21,15,1,11,20","15,25,13,26,22,7,20,16,","11,1,23,5,24,14,21,18,",2024-04-02 02:04:11.320,yes,9,no
+177,Asian-Pacific Islander,37,Male,NULL,NULL,NULL,NULL,2024-04-02 02:12:30.920,yes,9,NULL
+178,Asian-Pacific Islander,49,Male,NULL,NULL,NULL,NULL,2024-04-02 02:13:06.920,yes,9,NULL
+179,Asian-Pacific Islander,45,Male,NULL,NULL,NULL,NULL,2024-04-02 02:15:33.320,yes,8,NULL
+180,Asian-Pacific Islander,49,Male,NULL,NULL,NULL,NULL,2024-04-02 02:20:16.083,yes,10,NULL
+181,Indigenous,22,Female,Control Script,"1,22,27,26,8,24,17,13,7,6,20,3,11,18,14,23","23,14,18,6,3,11,20,22,","7,13,17,1,27,24,8,26,",2024-04-02 02:20:57.660,yes,7,yes
+182,Asian-Pacific Islander,49,Male,NULL,NULL,NULL,NULL,2024-04-02 02:29:25.390,yes,9,NULL
+183,Asian-Pacific Islander,45,Male,NULL,NULL,NULL,NULL,2024-04-02 02:33:21.967,no,9,NULL
+184,Asian-Pacific Islander,20,Male,NULL,NULL,NULL,NULL,2024-04-02 02:40:59.533,yes,8,NULL
+185,Asian-Pacific Islander,28,Male,NULL,NULL,NULL,NULL,2024-04-02 02:59:27.057,yes,8,NULL
+186,Asian-Pacific Islander,42,Female,Experimental Script,"17,1,20,6,22,12,25,24,18,5,8,13,7,26,16,14","7,22,20,24,5,8,26,17,","1,14,12,18,16,13,6,25,",2024-04-02 03:15:01.373,yes,7,no
+187,Asian-Pacific Islander,45,Male,NULL,NULL,NULL,NULL,2024-04-02 03:20:39.940,no,10,NULL
+188,Asian-Pacific Islander,48,Female,Control Script,"25,7,26,5,20,22,23,18,24,6,12,17,15,21,1,4","15,7,12,6,17,20,5,24,","1,25,26,22,23,18,21,4,",2024-04-02 03:22:21.973,no,6,yes
+189,Asian-Pacific Islander,46,Female,NULL,NULL,NULL,NULL,2024-04-02 03:28:34.770,yes,9,NULL
+190,Asian-Pacific Islander,22,Male,NULL,NULL,NULL,NULL,2024-04-02 03:33:49.120,yes,8,NULL
+191,Asian-Pacific Islander,22,Male,NULL,NULL,NULL,NULL,2024-04-02 03:34:45.030,yes,9,NULL
+192,Asian-Pacific Islander,47,Male,Control Script,"27,3,14,13,22,12,11,5,1,6,25,17,26,20,21,24","13,22,25,1,5,12,20,26,","27,14,6,17,24,21,11,3,",2024-04-02 03:35:21.163,yes,10,no
+193,Asian-Pacific Islander,22,Male,Experimental Script,"26,27,18,5,11,23,14,1,21,12,2,24,6,20,3,15","12,6,27,26,15,3,20,14,","23,24,2,5,1,21,11,18,",2024-04-02 03:35:25.210,yes,9,no
+194,Asian-Pacific Islander,19,Male,Experimental Script,"11,2,12,14,23,15,13,17,21,6,24,16,22,18,7,1","12,16,14,6,22,1,15,21,","11,2,23,13,17,24,18,7,",2024-04-02 03:38:36.773,yes,7,no
+195,Asian-Pacific Islander,45,Male,NULL,NULL,NULL,NULL,2024-04-02 04:13:42.740,yes,9,NULL
+196,Asian-Pacific Islander,45,Male,Control Script,"3,27,20,23,17,21,13,11,2,16,15,7,6,18,26,1","15,20,18,23,2,7,6,1,","3,27,13,26,16,11,21,17,",2024-04-02 04:41:31.737,no,6,no
+197,Asian-Pacific Islander,44,Female,NULL,NULL,NULL,NULL,2024-04-02 09:12:37.240,yes,8,NULL
+198,Asian-Pacific Islander,39,Female,Control Script,"12,25,17,27,6,1,24,18,13,11,4,14,3,26,16,8","8,25,18,4,1,26,12,16,","3,24,11,14,13,6,27,17,",2024-04-02 11:50:06.763,yes,8,no
+199,Other,46,Male,NULL,NULL,NULL,NULL,2024-04-02 12:51:04.893,yes,10,NULL
+200,Asian-Pacific Islander,44,Male,NULL,NULL,NULL,NULL,2024-04-02 13:24:57.607,yes,7,NULL
+201,Asian-Pacific Islander,41,Female,Experimental Script,"6,13,7,24,12,3,17,5,2,21,14,15,22,4,18,27","7,15,4,2,13,3,21,27,","14,6,17,24,12,5,18,22,",2024-04-02 14:24:39.760,yes,9,no
+202,Asian-Pacific Islander,43,Male,NULL,NULL,NULL,NULL,2024-04-02 14:48:10.527,yes,7,NULL
+203,African-American,10,Male,NULL,NULL,NULL,NULL,2024-04-02 14:56:44.740,yes,8,NULL
+204,White,25,Male,NULL,NULL,NULL,NULL,2024-04-02 14:58:33.807,yes,7,NULL
+205,Asian-Pacific Islander,42,Female,NULL,NULL,NULL,NULL,2024-04-02 15:20:58.550,yes,8,NULL
+206,Asian-Pacific Islander,1,Male,NULL,NULL,NULL,NULL,2024-04-02 16:33:42.147,yes,10,NULL
+207,Asian-Pacific Islander,45,Male,NULL,NULL,NULL,NULL,2024-04-02 16:50:53.200,yes,8,NULL
+208,White,1,Male,NULL,NULL,NULL,NULL,2024-04-02 17:35:54.893,yes,7,NULL
+209,Asian-Pacific Islander,44,Male,NULL,NULL,NULL,NULL,2024-04-02 18:08:21.440,yes,7,NULL
+210,Asian-Pacific Islander,37,Male,NULL,NULL,NULL,NULL,2024-04-02 19:14:37.290,no,9,NULL
+211,Asian-Pacific Islander,1,Male,NULL,NULL,NULL,NULL,2024-04-02 21:01:12.080,yes,10,NULL
+212,Asian-Pacific Islander,1,Male,NULL,NULL,NULL,NULL,2024-04-02 21:07:57.270,yes,10,NULL
+213,Asian-Pacific Islander,1,Male,NULL,NULL,NULL,NULL,2024-04-02 21:08:10.880,yes,10,NULL
+214,Asian-Pacific Islander,1,Male,NULL,NULL,NULL,NULL,2024-04-02 21:09:17.327,yes,8,NULL
+215,Asian-Pacific Islander,40,Female,NULL,NULL,NULL,NULL,2024-04-02 21:23:16.547,yes,7,NULL
+216,Asian-Pacific Islander,1,Male,NULL,NULL,NULL,NULL,2024-04-02 21:29:09.027,yes,10,NULL
+217,Asian-Pacific Islander,40,Female,NULL,NULL,NULL,NULL,2024-04-02 22:28:28.300,no,7,NULL
+218,Asian-Pacific Islander,20,Male,NULL,NULL,NULL,NULL,2024-04-03 02:15:11.240,yes,8,NULL
+219,Asian-Pacific Islander,41,Male,Control Script,"11,12,22,3,24,23,8,27,6,14,18,17,4,7,5,13","8,11,14,4,7,27,6,3,","12,22,24,23,18,17,13,5,",2024-04-03 06:18:38.597,yes,8,no
+220,Asian-Pacific Islander,45,Male,Experimental Script,"20,7,1,2,15,5,14,26,17,25,12,23,11,6,3,27","14,25,3,15,12,6,20,11,","27,23,17,26,5,2,1,7,",2024-04-03 12:34:41.797,yes,8,no
+221,African-American,20,Male,NULL,NULL,NULL,NULL,2024-04-03 17:22:44.137,yes,9,NULL
+222,African-American,1,Male,NULL,NULL,NULL,NULL,2024-04-03 17:31:32.320,yes,8,NULL
+223,African-American,1,Male,Experimental Script,"4,15,7,1,20,5,27,12,13,25,3,16,26,23,14,17","4,16,26,23,14,17,15,25,","7,1,20,5,27,12,13,3,",2024-04-03 18:26:59.363,yes,9,no
+224,White,1,Male,NULL,NULL,NULL,NULL,2024-04-03 18:30:35.670,yes,9,NULL
+225,Asian-Pacific Islander,46,Male,NULL,NULL,NULL,NULL,2024-04-04 01:13:08.617,yes,8,NULL
+226,Asian-Pacific Islander,42,Male,NULL,NULL,NULL,NULL,2024-04-04 04:28:20.933,yes,6,NULL
+227,Other,45,Male,NULL,NULL,NULL,NULL,2024-04-04 14:22:01.187,yes,NULL,NULL
+228,Asian-Pacific Islander,1,Male,NULL,NULL,NULL,NULL,2024-04-04 16:46:46.530,yes,10,NULL
+229,Asian-Pacific Islander,16,Female,Control Script,"5,27,24,16,2,13,17,25,22,26,12,1,6,4,15,18","15,1,22,2,16,24,18,4,","5,13,27,25,17,26,12,6,",2024-04-08 20:21:35.487,no,4,no
+230,White,50,Male,NULL,NULL,NULL,NULL,2024-04-12 06:53:34.733,yes,8,NULL

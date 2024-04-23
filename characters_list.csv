@@ -1,0 +1,25 @@
+﻿PlayerID,Race,Age,Gender,Picture
+1,Asian/Pacific Islander,18-39,Female,/images/asian_female_18-39.jpg
+2,Asian/Pacific Islander,40-59,Female,/images/asian_female_40-59.jpg
+3,Asian/Pacific Islander,60+,Female,/images/asian_female_60.jpg
+4,Asian/Pacific Islander,18-39,Male,/images/asian_male_18-39.jpg
+5,Asian/Pacific Islander,40-59,Male,/images/asian_male_40-59.jpg
+6,Asian/Pacific Islander,60+,Male,/images/asian_male_60.jpg
+7,Black,18-39,Female,/images/black_female_18-39.jpg
+8,Black,40-59,Female,/images/black_female_40-59.jpg
+11,Black,60+,Female,/images/black_female_60.jpg
+12,Black,18-39,Male,/images/black_male_18-39.jpg
+13,Black,40-59,Male,/images/black_male_40-59.jpg
+14,Black,60+,Male,/images/black_male_60.jpg
+15,Latino,18-39,Female,/images/latino_female_18-39.jpg
+16,Latino,40-59,Female,/images/latino_female_40-59.jpg
+17,Latino,60+,Female,/images/latino_female_60.jpg
+18,Latino,18-39,Male,/images/latino_male_18-39.jpg
+20,Latino,40-59,Male,/images/latino_male_40-59.jpg
+21,Latino,60+,Male,/images/latino_male_60.jpg
+22,White,18-39,Female,/images/white_female_18-39.jpg
+23,White,40-59,Female,/images/white_female_40-59.jpg
+24,White,60+,Female,/images/white_female_60.jpg
+25,White,18-39,Male,/images/white_male_18-39.jpg
+26,White,40-59,Male,/images/white_male_40-59.jpg
+27,White,60+,Male,/images/white_male_60.jpg
