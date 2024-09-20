@@ -1,0 +1,255 @@
+﻿@page
+@using ExperimentalGoal.Models;
+@using Newtonsoft.Json;
+@model ExperimentalGoal.Pages.GameSelectionModel
+@{
+    List<Models.Players> players = (List<Models.Players>)ViewData["players"];
+    Game gameValue = JsonConvert.DeserializeObject<Game>(TempData["Game"].ToString());
+}
+
+<style>
+    .Teams {
+        width: 100%;
+        min-height: 100px;
+        height: 100%;
+        padding: 10px;
+        border: 1px solid #ffff;
+    }
+</style>
+<script>
+    function allowDrop(ev) {
+        ev.preventDefault();
+    }
+
+    function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        let OppTeamCount = $("#divOppTeam > img").length;
+        let MyTeamCount = $("#divMyTeam > img").length;
+
+        if (event.target.id == "divOppTeam" && OppTeamCount < 8) {
+            ev.target.appendChild(document.getElementById(data));
+            return;
+        }
+        else if (event.target.id == "divMyTeam" && MyTeamCount < 8) {
+            ev.target.appendChild(document.getElementById(data));
+            return;
+        }
+        else {
+            alert("Only 8 member per team allowed.");
+            return;
+        }
+    }
+</script>
+<section class="gradient-custom">
+    <div class="container py-3">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="col-12 col-lg-9 col-xl-7">
+                <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+                    <div class="card-body p-2 p-md-4">
+                        <form id="formGameSelection" method="post">
+                        <h3 class="mb-4 pb-2 pb-md-4 mb-md-2">Team Selection</h3>
+                            <div class="row mb-3">
+                                @{
+                                    if (ViewData["script"] != null && ViewData["script"].ToString() == "0")
+                                    {
+                                        <label>You are about to play a casual team-building game. Sixteen characters will be presented to you, and you can click on each character’s image for a brief description. Drag-and-drop eight into your team, and place the remaining characters in the appropriate section.</label>
+                                        <input type="hidden" id="gameSelectiontext" name="gameselectiontext" value="Control Script" />
+                                    }
+                                    else
+                                    {
+                                        <label>You are about to play a competitive team game. Sixteen characters will be presented to you, and you can click on each character’s image for a brief description. Drag-and-drop eight into your team and eight into the opposing team. Carefully construct your team for the competition.</label>
+                                        <input type="hidden" id="gameSelectiontext" name="gameselectiontext" value="Experimental Script" />
+                                    }
+                                }
+                            </div>
+                            <div class="row border Teams">
+                                <div class="col-12">Select your team members:</div>
+                                <div class="col-12">
+                                    @{
+                                        string playersOrder = string.Empty;
+                                        @if (players != null && players.Count > 0)
+                                        {
+                                            foreach (var player in players)
+                                            {
+                                                <img id="@player.PlayerID" src="/images/characters/@player.Picture" onerror="this.onerror=null;this.src='/images/user.png'" draggable="true" ondragstart="drag(event)" width="48" height="48" race="@player.Race" age="@player.Age" gender="@player.Gender">
+                                                if (string.IsNullOrEmpty(playersOrder))
+                                                {
+                                                    playersOrder = @player.PlayerID.ToString();
+                                                }
+                                                else
+                                                {
+                                                    playersOrder += "," + @player.PlayerID;
+                                                }
+                                            }
+                                        }
+                                        <input type="hidden" id="playersOrder" name="playersOrder" value="@playersOrder"/>
+                                        <input type="hidden" id="gameid" name="gameid" value="@ViewData["gameid"]"/>
+                                        
+                                    }
+                                </div>
+                            </div>
+                       
+                            <div class="row mt-3">
+                                <div class="col-md-6 border ">
+                                    <label class="form-label">Your Team:</label>
+                                    <div class="row border">
+                                        <div id="divMyTeam" class="Teams" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                        <input type="hidden" name="team1" id="team1" value="" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6 border">
+                                    @{
+                                    if (ViewData["script"] != null && ViewData["script"].ToString() == "0")
+                                    {
+                                    <label class="form-label">Remaining characters:</label>
+                                    }
+                                    else
+                                    {
+                                    <label class="form-label">Opposite Team:</label>
+                                    }
+                                    }
+                                    <div class="row border">
+                                        <div id="divOppTeam" class="Teams" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                                        <input type="hidden" name="team2" id="team2" value="" />
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="mt-4 pt-2 text-center">
+                                <input id="btnSave" class="btn btn-primary btn-lg align-content-center" type="button" value="Save" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="modal fade" tabindex="-1" id="loginModal"
+                     data-keyboard="false" data-backdrop="static">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Player Profile</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="col-12">
+                                    <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+                                        <div class="card-body p-4 p-md-5">
+                                            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Player Information</h3>
+                                            <form method="post">
+                                                <div class="row">
+                                                    <div class="col-7">
+                                                     <img id="imgProfile" src="" onerror="this.onerror=null;this.src='/images/user.png'" draggable="true" ondragstart="drag(event)" width="100%" height="100%">
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <div class="row">
+                                                            <div class="col-md-4 mb-4">
+                                                                <div class="form-outline">
+                                                                    <labe>Race</labe>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-8 mb-4">
+                                                                <div class="row">
+                                                                    <div class="col-12">
+                                                                        <label id="lblRace"></label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4 mb-4">
+                                                                <div class="form-outline">
+                                                                    <label class="form-label">Sex</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-8 mb-4">
+                                                                <label id="lblGender"></label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-4 mb-4">
+                                                                <div class="form-outline">
+                                                                    <label class="form-label">Age</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-8">
+                                                                <div class="row">
+                                                                    <div class="col-12 mb-3">
+                                                                        <label id="lblAge"></label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <input type="button" id="btnHideModal" class="btn btn-primary" value="Close" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("img").click(function () {
+            var gender = $(this).attr('gender');
+            var age = $(this).attr('age');
+            var race = $(this).attr('race');
+            var profileImage = $(this).attr('src');
+
+            $('#lblGender').text(gender);
+            $('#lblAge').text(age);
+            $('#lblRace').text(race);
+
+            //write the code to generate the images based on the values
+            $('#imgProfile').attr('src', profileImage);
+
+            $("#loginModal").modal('show');
+        });
+
+        $("#btnHideModal").click(function () {
+            $("#loginModal").modal('hide');
+        });
+
+        $("#btnSave").click(function () {
+
+            let OppTeamCount = $("#divOppTeam > img").length;
+            let MyTeamCount = $("#divMyTeam > img").length;
+            if (OppTeamCount != 8 || MyTeamCount != 8) {
+                alert("Please complete the team selection before proceeding to the next screen.");
+                return false;
+            }
+
+            var team1 = ''; var team2 = '';
+
+            $("#divMyTeam > img").each(function () {
+                team1 = team1 + $(this).attr('id') + ",";
+            });
+            $("#divOppTeam > img").each(function () {
+                team2 = team2 + $(this).attr('id') + ",";
+            });
+            $("#team1").val(team1)
+            $("#team2").val(team2);
+            $("#formGameSelection").submit();
+        });
+    });
+</script>

@@ -1,0 +1,53 @@
+﻿@page
+@model ExperimentalGoal.Pages.SuccessModel
+@{
+}
+<section class="vh-100 gradient-custom">
+    <div class="container py-3 h-100">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="col-12 col-lg-9 col-xl-7">
+                <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+                    <div class="card-body p-2 p-md-4 ">
+                        <h3 class="mb-4 pb-2 pb-md-4 mb-md-2">Success</h3>
+                        <div class="row text-left pb-2">
+                            <label>Thank you for your participation! Your data will help us better understand social grouping behavior in competitive and non-competitive environments. Share this study with your friends and family! <b>We request you do not tell others there is no game as that may alter their responses and compromise the integrity of the study.</b></label>
+                        </div>
+                       @* <div class="row">
+                            <div class="col-9 py-5">
+                                <!-- The text field -->
+                                <input class="form-control" type="text" id="websiteName" disabled value="@ViewData["website"].ToString()">
+                                <!-- The button used to copy the text -->
+                            </div>
+                            <div class="col-3 py-5">
+                                <button class="form-control btn-primary" onclick="copyFunction()">Copy Website</button>
+                            </div>
+                        </div>*@
+                        <div class="row text-left pt-2">
+                            <label>
+                                Feel free to contact us at <a href="mailto:shreyas.teegala@vanderbilt.edu">shreyas.teegala@vanderbilt.edu</a>
+                                or <a href="mailto:milind.muthiah@vanderbilt.edu">milind.muthiah@vanderbilt.edu</a> with any questions or follow-ups.
+                                For additional information about your rights as a participant in this study, or to discuss problems, concerns, and questions, please feel free to contact the Institutional Review Board Office at (615) 322-2918 or toll free at (866) 224-8273.
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+</section>
+<script type="text/javascript">
+    function copyFunction() {
+        // Get the text field
+        var copyText = $("websiteName").val();
+
+        // Select the text field
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); // For mobile devices
+
+        // Copy the text inside the text field
+        navigator.clipboard.write(copyText.value);
+
+        // Alert the copied text
+        alert("Copied the text: " + copyText.value);
+    }
+</script>

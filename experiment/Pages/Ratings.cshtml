@@ -1,0 +1,118 @@
+﻿@page
+@using ExperimentalGoal.Models;
+@using Newtonsoft.Json;
+@model ExperimentalGoal.Pages.RatingsModel
+@{
+    Game gameValue = JsonConvert.DeserializeObject<Game>(TempData["Game"].ToString());
+}
+<style>
+    .star-rating {
+        border: solid 1px #ccc;
+        display: flex;
+        flex-direction: row-reverse;
+        font-size: 1.5em;
+        justify-content: space-around;
+        padding: 0 .2em;
+        text-align: center;
+        width: 10em;
+    }
+
+        .star-rating input {
+            display: none;
+        }
+
+        .star-rating label {
+            color: #ccc;
+            cursor: pointer;
+        }
+
+        .star-rating :checked ~ label {
+            color: #f90;
+        }
+
+        .star-rating label:hover,
+        .star-rating label:hover ~ label {
+            color: #fc0;
+        }
+
+    /* explanation */
+
+    article {
+        background-color: #ffe;
+        box-shadow: 0 0 1em 1px rgba(0,0,0,.25);
+        color: #006;
+        font-family: cursive;
+        font-style: italic;
+        margin: 4em;
+        max-width: 40em;
+        padding: 3em;
+    }
+</style>
+<section class="gradient-custom">
+    <div class="container py-3">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="col-12 col-lg-9 col-xl-7">
+                <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+                    <div class="card-body p-2 p-md-4">
+                        <form id="formRating" method="post">
+                            <h3 class="mb-4 pb-2 pb-md-4 mb-md-2">Rating</h3>
+                            <div class="row mb-3">
+                                <label>On a scale from 1-10, how typically successful are you in competitive environments?</label>
+                            </div>
+                            <div class="mt-4 pt-2 text-center">
+                                <div class="col-md-12">
+                                    <div class="star-rating">
+                                       <input type="radio" id="10-star" name="ratings" value="10" />
+                                        <label for="10-star" class="star">&#9733;</label>
+                                        <input type="radio" id="9-stars" name="ratings" value="9" />
+                                        <label for="9-stars" class="star">&#9733;</label>
+                                        <input type="radio" id="8-stars" name="ratings" value="8" />
+                                        <label for="8-stars" class="star">&#9733;</label>
+                                        <input type="radio" id="7-stars" name="ratings" value="7" />
+                                        <label for="7-stars" class="star">&#9733;</label>
+                                        <input type="radio" id="6-stars" name="ratings" value="6" />
+                                        <label for="6-stars" class="star">&#9733;</label>
+                                        <input type="radio" id="5-star" name="ratings" value="5" />
+                                        <label for="5-star" class="star">&#9733;</label>
+                                        <input type="radio" id="4-stars" name="ratings" value="4" />
+                                        <label for="4-stars" class="star">&#9733;</label>
+                                        <input type="radio" id="3-stars" name="ratings" value="3" />
+                                        <label for="3-stars" class="star">&#9733;</label>
+                                        <input type="radio" id="2-stars" name="ratings" value="2" />
+                                        <label for="2-stars" class="star">&#9733;</label>
+                                        <input type="radio" id="1-stars" name="ratings" value="1" />
+                                        <label for="1-stars" class="star">&#9733;</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4 pt-2">
+                                <input type="hidden" name="rating" id="rating" value="" />
+                                <input type="hidden" name="GameID" id="GameID" value="@gameValue.GameID" />
+                                <input id="btnRatings" class="button btn btn-primary" type="button" value="Next" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $("#btnRatings").click(function () {
+            let ratings = $('input[name="ratings"]:checked').val();
+            if (ratings == undefined || ratings <= 0) {
+                alert("Please provide the rating.");
+                return false;
+            }
+            else {
+                $('#rating').val(ratings);
+                $("#formRating").submit();
+            }
+
+        });
+    });
+</script>
+

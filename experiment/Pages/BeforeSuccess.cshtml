@@ -1,0 +1,51 @@
+﻿@page
+@using ExperimentalGoal.Models;
+@using Newtonsoft.Json;
+@model ExperimentalGoal.Pages.BeforeSuccessModel
+@{
+    Game gameValue = JsonConvert.DeserializeObject<Game>(TempData["Game"].ToString());
+}
+<section class="vh-100 gradient-custom">
+    <div class="container py-3 h-100">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="col-12 col-lg-9 col-xl-7">
+                <form id="formBeforeSuccess" method="post">
+                    <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+                        <div class="card-body p-2 p-md-4 ">
+                            <h3 class="mb-4 pb-2 pb-md-4 mb-md-2">Game?</h3>
+                            <div class="form-group">
+                                <label>
+                                    Thank you for selecting your team. There is no game!<br /><br />Did anyone tell you that there was no game prior to you completing the task?<br />
+                                    <input type="radio" asp-for="Game.NoGame" id="yes" value="yes"> Yes
+                                    <input type="radio" asp-for="Game.NoGame" id="no" value="no"> No
+                                    <span class="alert-danger" asp-validation-for="Game.NoGame"></span>
+                                </label>
+                            </div>
+                            <div class="mt-4 pt-2">
+                                <input type="hidden" asp-for="Game.GameID" id="GameID" value="@gameValue.GameID" />
+                                <input id="btnGoToSuccess" class="button btn btn-primary" type="button" value="Next" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $("#btnGoToSuccess").click(function () {
+            let gamealue = $("input[type='radio'][name='Game.NoGame']:checked").val();;
+            if (gamealue == undefined || gamealue == "") {
+                alert("Please select yes/no.");
+                return false;
+            }
+            else {
+                $("#formBeforeSuccess").submit();
+            }
+
+        });
+    });
+</script>

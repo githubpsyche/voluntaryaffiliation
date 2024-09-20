@@ -1,0 +1,47 @@
+﻿@page
+@using RazorPagesDemo.Models @*namespace*@
+@using RazorPagesDemo.Pages;
+@model IndexModel
+@{
+    ViewData["Title"] = "Team Game Task";
+}
+<section class="gradient-custom">
+    <div class="container py-5 h-100">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="col-12 col-lg-9 col-xl-7">
+                <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+                    <div class="card-body p-md-3">
+                        <label>Hello! Thank you for participating in this study.<br /><br /> Your participation is for research and is entirely voluntary.</label>
+                    </div>
+                    <div class="card-body">
+                        <label class="mb-3">The study should take under 10 minutes to complete. The general purpose of this study is to better understand social grouping behavior. The complete purpose of the study will be explained after it is concluded. Contact information will be provided at the end for any further questions or clarifications.</label>
+                        <div class="form-group"> <label>If you would like to participate in this study, please confirm that you are eighteen years of age or older:&nbsp;<input type="radio" name="age" id="yes" value="yes"> Yes <input type="radio" name="age" value="no" id="yes"> No</label></div>
+                    </div>
+                    @*<div class="mt-4 pt-1 pb-2 text-center">
+                    <input id="btnSave" class="btn btn-primary btn-md align-content-center" type="button" value="Next" />
+                    </div>*@
+                    <div class="mt-4 pt-1 pb-2 text-center">
+                        <a id="btnSave" class="btn btn-primary btn-md align-content-center" asp-page="/ParticipatingInfo">Next</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#btnSave').hide();
+        $('input[name="age"]').click(function () {
+
+            if ($('input[name="age"]:checked').val() == "yes") { 
+                $('#btnSave').show();
+            }
+            else{
+                $('#btnSave').hide();
+            }
+
+            $('input[name="age"]:checked').val();
+        });
+    });
+</script>
+

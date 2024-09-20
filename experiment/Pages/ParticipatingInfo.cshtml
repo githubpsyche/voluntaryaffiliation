@@ -1,0 +1,24 @@
+﻿@page
+@using RazorPagesDemo.Models @*namespace*@
+@using RazorPagesDemo.Pages;
+@model ParticipatingInfoModel
+@{
+    ViewData["Title"] = "Participating instructions";
+}
+<section class="gradient-custom">
+    <div class="container py-5 h-100">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="col-12 col-lg-9 col-xl-7">
+                <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+                    <div class="card-body p-md-3">
+                        <label>Thank you for participating in this research study. Please enter your information on the next page and read the instructions that follow. Some details about this study may not be known until the study is completed.</label>
+                        </div>
+                    <div class="mt-4 pt-1 pb-2 text-center">
+                        <a id="btnSave" class="btn btn-primary btn-md align-content-center" asp-page="/DemographicInformation">Next</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>

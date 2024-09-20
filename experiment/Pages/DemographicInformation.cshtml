@@ -1,0 +1,113 @@
+﻿@page
+@using RazorPagesDemo.Models @*namespace*@
+@using RazorPagesDemo.Pages;
+@model DemographicInformationModel
+@{
+    ViewData["Title"] = "Team Game Task";
+}
+<section class="gradient-custom">
+    <div class="container py-5 h-100">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="col-12 col-lg-9 col-xl-7">
+                <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
+                    <div class="card-body p-4 p-md-5">
+                        <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Demographic Information</h3>
+                        <form method="post">
+                            @{
+                                if (!string.IsNullOrEmpty(ViewData["message"].ToString()))
+                                {
+                                    <div class="row mb-5">
+                                        <div class="col-12 alert-danger">@ViewData["message"]</div>
+                                    </div>
+                                }
+                            }
+                            <div></div>
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <div class="form-outline">
+                                        <label asp-for="Game.Race">Racial Identity</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 mb-4">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <select asp-for="Game.Race" class="form-control select form-control-lg">
+                                                <option value="">Choose option</option>
+                                                <option value="Asian-Pacific Islander">Asian/Pacific Islander</option>
+                                                <option value="African-American">African-American</option>
+                                                <option value="White">White</option>
+                                                <option value="Latinx">Latinx</option>
+                                                <option value="Indigenous">Indigenous</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                            <span class="alert-danger" asp-validation-for="Game.Race"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <div class="form-outline">
+                                        <label asp-for="Game.Gender" class="form-label">Sex</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-8 mb-4">
+                                    <div class="form-check form-check-inline">
+                                        <input asp-for="Game.Gender" class="form-check-input" type="radio"
+                                               value="Male" />
+                                        <label class="form-check-label" asp-for="Game.Gender">Male</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input asp-for="Game.Gender" class="form-check-input" type="radio"
+                                               value="Female" />
+                                        <label class="form-check-label" asp-for="Game.Gender">Female</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input asp-for="Game.Gender" class="form-check-input" type="radio"
+                                               value="Other" />
+                                        <label class="form-check-label" asp-for="Game.Gender">Other</label>
+                                    </div>
+                                    <br />
+                                    <span class="alert-danger" asp-validation-for="Game.Gender"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 mb-4">
+                                    <div class="form-outline">
+                                        <label asp-for="Game.Age" class="form-label">Age</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <div class="col-12 mb-3">
+                                           @*  <select asp-for="Game.Age" class="form-control select form-control-lg">
+                                                <option value="">Choose Age</option>
+                                                <option value="18-39">18-39</option>
+                                                <option value="40-59">40-59</option>
+                                                <option value="60+">60+</option>
+                                            </select>
+                                            <span class="alert-danger" asp-validation-for="Game.Age"></span> *@
+                                            <input type="text" asp-for="Game.Age" class="form-control form-control-lg form-text" />
+                                            <span class="alert-danger" asp-validation-for="Game.Age"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group"> <label>Have you completed or are you currently pursuing a college education?<br/>
+                                    <input type="radio" asp-for="Game.PursuingCollege"  id="yes" value="yes"> Yes
+                                    <input type="radio" asp-for="Game.PursuingCollege" id="yes" value="no"> No
+                                    <span class="alert-danger" asp-validation-for="Game.PursuingCollege"></span>
+                                </label>
+                            </div>
+                            <div class="mt-4 pt-2">
+                                <input class="button btn btn-primary" type="submit" value="Next" />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+

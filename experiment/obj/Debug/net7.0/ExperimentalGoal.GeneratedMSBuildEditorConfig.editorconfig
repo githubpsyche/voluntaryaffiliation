@@ -1,0 +1,87 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ExperimentalGoal
+build_property.RootNamespace = ExperimentalGoal
+build_property.ProjectDir = /Users/jordangunn/Downloads/ExperimentalGoal/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = /Users/jordangunn/Downloads/ExperimentalGoal
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/jordangunn/Downloads/ExperimentalGoal/Pages/AllCustomer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWxsQ3VzdG9tZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jordangunn/Downloads/ExperimentalGoal/Pages/BeforeSuccess.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQmVmb3JlU3VjY2Vzcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jordangunn/Downloads/ExperimentalGoal/Pages/Customer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ3VzdG9tZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jordangunn/Downloads/ExperimentalGoal/Pages/DemographicInformation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRGVtb2dyYXBoaWNJbmZvcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jordangunn/Downloads/ExperimentalGoal/Pages/EditCustomer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRWRpdEN1c3RvbWVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jordangunn/Downloads/ExperimentalGoal/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jordangunn/Downloads/ExperimentalGoal/Pages/Game.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvR2FtZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jordangunn/Downloads/ExperimentalGoal/Pages/GameSelection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvR2FtZVNlbGVjdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jordangunn/Downloads/ExperimentalGoal/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jordangunn/Downloads/ExperimentalGoal/Pages/ParticipatingInfo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGFydGljaXBhdGluZ0luZm8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jordangunn/Downloads/ExperimentalGoal/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jordangunn/Downloads/ExperimentalGoal/Pages/Ratings.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUmF0aW5ncy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jordangunn/Downloads/ExperimentalGoal/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jordangunn/Downloads/ExperimentalGoal/Pages/Success.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3VjY2Vzcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jordangunn/Downloads/ExperimentalGoal/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jordangunn/Downloads/ExperimentalGoal/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jordangunn/Downloads/ExperimentalGoal/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-a828yy7vl4
