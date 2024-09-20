@@ -1,0 +1,1 @@
+To investigate the dynamics of team formation, this study examines how homophily -- the tendency for individuals to form ties with others who are similar to themselves -- manifests under different task contexts.
