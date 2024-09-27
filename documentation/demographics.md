@@ -12,7 +12,78 @@ Current demographic characteristic options:
     - Indigenous
     - Other
 
+```javascript
+using System;
+using System.IO;
+using System.Collections.Generic;
 
+public class ImageRenamer
+{
+    public void RenameImages(string directoryPath)
+    {
+        // Define the mappings for demographic and gender replacements
+        var raceMapping = new Dictionary<string, string>
+        {
+            { "asian", "East-Southeast Asian" },  // Modify as per your exact categories
+            { "black", "Black" },
+            { "latino", "Hispanic-Latino-a" }
+        };
+
+        var genderMapping = new Dictionary<string, string>
+        {
+            { "female", "woman" },
+            { "male", "man" }
+        };
+
+        // Get all image files (jpg and png)
+        var imageFiles = Directory.GetFiles(directoryPath, "*.jpg")
+                        .Concat(Directory.GetFiles(directoryPath, "*.png"));
+
+        foreach (var filePath in imageFiles)
+        {
+            // Extract the filename without the extension
+            var fileName = Path.GetFileNameWithoutExtension(filePath);
+            var extension = Path.GetExtension(filePath);
+
+            // Split the filename by underscore
+            var parts = fileName.Split('_');
+
+            if (parts.Length != 3)
+            {
+                Console.WriteLine($"Skipping invalid file name: {fileName}");
+                continue; // Skip any files that don't match the expected pattern
+            }
+
+            // Apply race mapping
+            string race = parts[0];
+            if (raceMapping.ContainsKey(race))
+            {
+                race = raceMapping[race];
+            }
+
+            // Apply gender mapping
+            string gender = parts[1];
+            if (genderMapping.ContainsKey(gender))
+            {
+                gender = genderMapping[gender];
+            }
+
+            // Age remains unchanged
+            string age = parts[2];
+
+            // Construct the new filename
+            var newFileName = $"{race}_{gender}_{age}{extension}";
+
+            // Construct the full path of the new file
+            var newFilePath = Path.Combine(directoryPath, newFileName);
+
+            // Rename the file
+            File.Move(filePath, newFilePath);
+            Console.WriteLine($"Renamed {filePath} to {newFilePath}");
+        }
+    }
+}
+```
 
 Census designations: 
     Black or African American.  A person having origins in any of the Black racial groups of Africa. It includes people who indicate their race as "Black or African American," or report responses such as African American, Jamaican, Haitian, Nigerian, Ethiopian, or Somali. The category also includes groups such as Ghanaian, South African, Barbadian, Kenyan, Liberian, Bahamian, etc.
