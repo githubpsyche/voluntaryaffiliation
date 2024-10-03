@@ -7,4 +7,9 @@ Preliminary findings indicate that homophily may decrease under high-stakes, adv
 We further implemented and compared competing accounts of team formation as computational models, exploring how well homophily and other associative processes capture the observed team formation patterns.
 Our results suggest that homophily is not a universal principle of team formation, but rather a flexible strategy that individuals variably deploy in response to task demands.
 
-Whatever
+# Stuff
+
+## Whatever
+
+## Huhufhafs
+
