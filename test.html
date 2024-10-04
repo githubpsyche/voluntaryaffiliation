@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sortable.js Swap Plugin Demo</title>
+    <title>Sortable.js with Explicit Ranking</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js"></script>
     <style>
         /* Basic styles for the sortable items */
         .sortable-list {
@@ -33,63 +34,68 @@
             margin: 0;
         }
 
-        /* Highlight the item being swapped */
-        .highlight {
-            background-color: #ffeb3b;
-            border-color: #fbc02d;
+        .rank-number {
+            font-weight: bold;
+            margin-right: 20px;
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
 
-    <script src="https://raw.githack.com/SortableJS/Sortable/master/Sortable.js"></script>
-
-<h3>Drag and Drop to Swap the Characters</h3>
-<div id="list" class="list-group">
-
-    <div class="sortable-item" data-id="1">
+<h3>Drag and Drop to Rank the Characters</h3>
+<ul id="sortable-list" class="sortable-list">
+    <li class="sortable-item" data-id="1">
+        <span class="rank-number">1</span>
         <img src="https://raw.githubusercontent.com/githubpsyche/jspsych2150/main/img/1.gif" alt="Character 1">
         <div>
             <p>Race: White</p>
             <p>Sex: Female</p>
             <p>Age: 18-39</p>
         </div>
-    </div>
-    <div class="sortable-item" data-id="2">
+    </li>
+    <li class="sortable-item" data-id="2">
+        <span class="rank-number">2</span>
         <img src="https://raw.githubusercontent.com/githubpsyche/jspsych2150/main/img/2.gif" alt="Character 2">
         <div>
             <p>Race: Black</p>
             <p>Sex: Male</p>
             <p>Age: 18-39</p>
         </div>
-    </div>
-    <div class="sortable-item" data-id="3">
+    </li>
+    <li class="sortable-item" data-id="3">
+        <span class="rank-number">3</span>
         <img src="https://raw.githubusercontent.com/githubpsyche/jspsych2150/main/img/3.gif" alt="Character 3">
         <div>
             <p>Race: Asian</p>
             <p>Sex: Female</p>
             <p>Age: 18-39</p>
         </div>
-    </div>
+    </li>
     <!-- Add more characters as needed -->
-</div>
+</ul>
 
 <script>
-    // // Initialize Sortable.js with the Swap plugin
-    // var sortable = new Sortable(document.getElementById('sortable-list'), {
-    //     swap: true, // Enable swap plugin
-    //     swapClass: 'highlight', // The class applied to the item being swapped
-    //     animation: 150,
-    //     onEnd: function (evt) {
-    //         var order = sortable.toArray(); // Get new order after swapping
-    //         console.log(order); // Log the new order of the items
-    //     }
-    // });
-    Sortable.create(list, {
-        swap: true,
-        swapClass: "highlight",
-        animation: 150
+    // Function to update rank numbers
+    function updateRankNumbers() {
+        var items = document.querySelectorAll('.sortable-item');
+        items.forEach((item, index) => {
+            item.querySelector('.rank-number').textContent = index + 1;
         });
+    }
+
+    // Initialize Sortable.js
+    var sortable = new Sortable(document.getElementById('sortable-list'), {
+        animation: 150,
+        onEnd: function (evt) {
+            updateRankNumbers(); // Update the rank numbers after each sort
+            var order = sortable.toArray(); // Get new order after drag and drop
+            console.log(order); // This will log the new order of the items
+        }
+    });
+
+    // Initial rank numbers
+    updateRankNumbers();
 </script>
 
 </body>
